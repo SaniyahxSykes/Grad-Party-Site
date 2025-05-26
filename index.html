@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Saniyah's Graduation Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body style= "background-color: #8A2D3B">
+  <h1 style= "font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Saniyah's High School Graduation Website</h1> 
+  <img src= "graduate.png" class="float.icon" alt="GradCap" id="magic-cap"/>
+  <h2 id="typed-text"></h2>
+  <div class="container">
+  <img src="IMG_8421.jpg" alt="Saniyah's Graduation Photo" /> 
+  </div> 
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script> 
+  <h3 id="thank-you-text" style= "font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: #FFFDF6; font-size: 30px;"> Thank you for celebrating this moment with me! </h3>
+  <script> 
+    confetti();
+    window.onload = () => {
+      confetti({ 
+        particleCount: 200, 
+        spread: 100, 
+        origin: { y: 0.6 }
+      }); 
+    };
+  </script> 
+  <div class="float-icons"> 
+    <span class="icon">👩🏿‍🎓</span>
+    <span class="icon">🎉</span> 
+    <span class="icon">🎓</span>
+    <span class="icon">📚</span>
+  </div>
+  <button id="lovebutton">Show some love!</button>
+  
+  
+  <div id="popup" class="popup-overlay">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h2>Support the Grad!</h2>
+      <a href="https://cash.app/$Saniyahsykess" target="_blank" class="popup-button">CashApp</a>
+      <a href="https://www.amazon.com/registries/gl/guest-view/328KQ7W70LIAW" target="_blank" class="popup-button">Amazon Wishlist</a>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
